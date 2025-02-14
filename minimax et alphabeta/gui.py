@@ -127,7 +127,8 @@ class FanoronaTeloGUI:
     def check_game_over(self):
         if self.logic.check_win(0, 0):
             self.logic.game_over = True
-            messagebox.showinfo("Game Over", f"{self.logic.current_player} gagne!")
+            winner = "Les Blancs" if self.logic.current_player == 'X' else "Les Noirs"
+            messagebox.showinfo("Fin de la partie", f"{winner} gagnent!")
             self.master.quit()
             return True
         else:
