@@ -24,6 +24,7 @@
 # DESCRIPTION
 
 > **Partie I et II :**
-> Le jeu se trouve dans le dossier minimax alphabeta. Pour lancer le jeu, lancer le fichier **main.py** . 
+> Le jeu se trouve dans le dossier minimax alphabeta. Pour lancer le jeu, lancer le fichier **main.py**.
+> Le jeu se déroule comme suit :  choix d'un algorithme (minimax ou alphabeta), et les joueurs (blancs et noirs) placent les pions à tour de rôle comme pour tic tac toe. Si personne ne gagne, ils déplacent leurs pions tour par tour comme pour le jeu fanorona telo.
 > Pour tester la performance des deux algorithme, lancer le fichier  **performance_test.py**
 ---
