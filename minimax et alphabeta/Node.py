@@ -51,13 +51,13 @@ class Node:
         current_board = self.x_board if self.player == 'X' else self.o_board
         empty = self.get_empty_squares()
 
-        # Définition des mouvements valides selon les lignes du plateau
+        # Définition des mouvements valides le long des lignes visibles
         valid_connections = {
             0: [1, 3, 4],     # Coin supérieur gauche
             1: [0, 2, 4],     # Milieu haut
             2: [1, 4, 5],     # Coin supérieur droit
             3: [0, 4, 6],     # Milieu gauche
-            4: [0, 1, 2, 3, 5, 6, 7, 8],  # Centre
+            4: [0, 1, 2, 3, 5, 6, 7, 8],  # Centre - connecté à toutes les positions par les lignes
             5: [2, 4, 8],     # Milieu droit
             6: [3, 4, 7],     # Coin inférieur gauche
             7: [4, 6, 8],     # Milieu bas
@@ -69,6 +69,7 @@ class Node:
                 for end in valid_connections[start]:
                     if empty & (1 << end):
                         moves.append((start, end))
+
         return moves
 
     def minimax(self, depth, maximizing_player):
