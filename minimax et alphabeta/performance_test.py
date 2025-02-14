@@ -41,25 +41,25 @@ def test_performance(depth=4, num_tests=10):
         total_time_alphabeta += (end_time - start_time)
         total_nodes_alphabeta += node_alphabeta.nodes_explored
 
-    print(f"Résultats pour {num_tests} tests à profondeur {depth}:")
+    print(f"Resultats pour {num_tests} tests a profondeur {depth}:")
     print("\nMinimax:")
     print(f"Temps moyen: {total_time_minimax/num_tests:.4f} secondes")
-    print(f"Nœuds explorés en moyenne: {total_nodes_minimax/num_tests:.0f}")
+    print(f"Noeuds explores en moyenne: {total_nodes_minimax/num_tests:.0f}")
     
     print("\nAlpha-Beta:")
     print(f"Temps moyen: {total_time_alphabeta/num_tests:.4f} secondes")
-    print(f"Nœuds explorés en moyenne: {total_nodes_alphabeta/num_tests:.0f}")
+    print(f"Noeuds explores en moyenne: {total_nodes_alphabeta/num_tests:.0f}")
     
     print("\nGains de performance:")
     if total_time_minimax > 0:
-        print(f"Réduction du temps: {((total_time_minimax - total_time_alphabeta)/total_time_minimax)*100:.1f}%")
+        print(f"Reduction du temps: {((total_time_minimax - total_time_alphabeta)/total_time_minimax)*100:.1f}%")
     else:
-        print("Réduction du temps: N/A (temps minimax = 0)")
+        print("Reduction du temps: N/A (temps minimax = 0)")
         
     if total_nodes_minimax > 0:
-        print(f"Réduction des nœuds explorés: {((total_nodes_minimax - total_nodes_alphabeta)/total_nodes_minimax)*100:.1f}%")
+        print(f"Reduction des noeuds explores: {((total_nodes_minimax - total_nodes_alphabeta)/total_nodes_minimax)*100:.1f}%")
     else:
-        print("Réduction des nœuds explorés: N/A (nœuds minimax = 0)")
+        print("Reduction des noeuds explores: N/A (nœuds minimax = 0)")
 
 if __name__ == "__main__":
     test_performance(depth=4, num_tests=10) 
