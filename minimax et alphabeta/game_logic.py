@@ -27,11 +27,13 @@ class FanoronaTeloLogic:
         if self.board[end_row][end_col] != ' ':
             return False
 
-        if abs(start_row - end_row) > 1 or abs(start_col - end_col) > 1:
-            return False
-
         start_pos = start_row * 3 + start_col
         end_pos = end_row * 3 + end_col
+
+        # Vérifier si le mouvement est dans la liste des mouvements valides
+        valid_moves = self.node._get_valid_piece_movements()
+        if (start_pos, end_pos) not in valid_moves:
+            return False
 
         self.node.move_piece(start_pos, end_pos)
         self.board[end_row][end_col] = self.current_player
