@@ -23,7 +23,7 @@
 ---
 # DESCRIPTION
 
-> **Partie I :**
+> **Partie I et II :**
 > Le jeu se trouve dans le dossier minimax alphabeta. Pour lancer le jeu, lancer le fichier **main.py** . 
 > Pour tester la performance des deux algorithme, lancer le fichier  **performance_test.py**
 ---
