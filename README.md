@@ -18,7 +18,7 @@
   * Koloina, Toky : Partie I (application de l'algorithme minimax pour créer le moteur de l'IA et aussi l'algorithme alphabeta)
   * Yusha : Partie II et partie III (Interface et Création dataset)
   * Liantsoa : Partie III (Nétoyage dataset et Analyse)
-  * Heriniaina : Choix modèles et entrainement)
+  * Heriniaina : Partie III (Choix modèles et entrainement)
 
 ---
 # DESCRIPTION
