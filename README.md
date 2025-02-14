@@ -18,12 +18,12 @@
   * Koloina, Toky : Partie I (application de l'algorithme minimax pour créer le moteur de l'IA et aussi l'algorithme alphabeta)
   * Yusha : Partie II et partie III (Interface et Création dataset)
   * Liantsoa : Partie III (Nétoyage dataset et Analyse)
-  * Heriniaina : Choix modèles et entrainement)
+  * Heriniaina : Partie III (Choix modèles et entrainement)
 
 ---
 # DESCRIPTION
 
-> **Partie I :**
+> **Partie I et II :**
 > Le jeu se trouve dans le dossier minimax alphabeta. Pour lancer le jeu, lancer le fichier **main.py** . 
 > Pour tester la performance des deux algorithme, lancer le fichier  **performance_test.py**
 ---
