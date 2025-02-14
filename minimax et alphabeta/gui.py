@@ -21,8 +21,8 @@ class FanoronaTeloGUI:
         
         self.logic = FanoronaTeloLogic()
         self.is_ai_turn = False
-        self.human_player = 'X'  # Ajout : le joueur humain est toujours X (bleu)
-        self.ai_player = 'O'     # Ajout : l'IA est toujours O (rouge)
+        self.human_player = 'X'  # Ajout : le joueur humain est toujours X (blanc)
+        self.ai_player = 'O'     # Ajout : l'IA est toujours O (noir)
 
         self.canvas = tk.Canvas(master, width=300, height=300)
         self.canvas.pack()
@@ -57,7 +57,7 @@ class FanoronaTeloGUI:
         x = col * 100 + 50
         y = row * 100 + 50
         radius = 20
-        color = 'blue' if player == 'X' else 'red'
+        color = 'white' if player == 'X' else 'black'
         self.canvas.create_oval(x - radius, y - radius, x + radius, y + radius, fill=color)
 
     def click(self, event):
